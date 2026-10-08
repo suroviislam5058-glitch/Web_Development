@@ -27,4 +27,8 @@ export class CourseService {
   deleteCourse(id: string) {
     return `Delete Course ${id} - from Service`;
   }
+
+  getCoursesByStatus() {
+    return 'Course Management API is running successfully.';
+  }
 }

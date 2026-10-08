@@ -20,6 +20,11 @@ export class CourseController {
     return this.courseService.getAllCourses();
   }
  
+  @Get('status')
+  getCoursesByStatus() {
+    return this.courseService.getCoursesByStatus();
+  }
+
   @Get(':id')
   getCourseById(@Param('id') id: string) {
     return this.courseService.getCourseById(id);
