@@ -51,4 +51,10 @@ export class CourseController {
   deleteCourse(@Param('id') id: string) {
     return this.courseService.deleteCourse(id);
   }
+
+  @Post('review')
+  createCourseReview() {
+    return this.courseService.createCourseReview();
+  }
+
 }

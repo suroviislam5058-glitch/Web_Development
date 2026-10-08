@@ -31,4 +31,8 @@ export class CourseService {
   getCoursesByStatus() {
     return 'Course Management API is running successfully.';
   }
+
+  createCourseReview() {
+    return 'Create Course Review created successfully - from Service';
+  }
 }
